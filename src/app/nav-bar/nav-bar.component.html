@@ -1,0 +1,15 @@
+<nav class="nav justify-content-center"  *ngIf="isAuthentificated">
+    <!-- <a class="nav-link " routerLinkActive="active current" routerLink="/authentification">Authentification</a>
+    <a class="nav-link " routerLinkActive="active current" routerLink="/input-data">Your CV</a> -->
+    <!-- <li class="nav-item">
+        <a class="nav-link" routerLinkActive="active current" routerLink="">Authentification</a>
+      </li> -->
+      <li class="nav-item" >
+        <a class="nav-link" routerLinkActive="active current" routerLink="/input-data">Your CV</a>
+      </li>
+      <li class="nav-item navbar-right">
+        <a  href="#" class="nav-link" (click)="onLogout()" >Log Out</a>
+      </li>
+  </nav>
+   
+  <router-outlet></router-outlet>
